@@ -1,0 +1,29 @@
+.side-content {
+  @include media($large-screen) {
+    padding-top: 4em;
+  }
+
+  .aside {
+    @include display(flex);
+    @include justify-content(center);
+    padding-top: 1em;
+
+    @include media($large-screen) {
+      @include span-columns(4);
+    }
+  }
+
+  .content {
+    @include span-columns(12);
+
+    @include media($large-screen) {
+      @include span-columns(8);
+      padding: 8em 4em 8em 4em;
+    }
+  }
+
+  .content p {
+    color: gray;
+  }
+  @include reset-display();
+}

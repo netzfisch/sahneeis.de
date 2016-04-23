@@ -1,7 +1,18 @@
+// vendor
 @import "vendor/normalize";
 
 @import "bourbon";
 @import "base/base";
 @import "neat";
+@import "font-awesome";
 
-@import "global";
+// custom stylesheets
+@import "custom-variables";
+@import "main";
+@import "navigation";
+@import "accordian-tabs";
+@import "flex-boxes";
+@import "hero-unit";
+@import "modal";
+@import "side-content";
+@import "footer";

@@ -1,0 +1,50 @@
+body {
+  color: $medium-gray;
+}
+
+.section {
+  @include media($large-screen) {
+    @include align-items(center);
+    @include display(flex);
+    @include justify-content(center);
+    height: 100vh;
+  }
+}
+
+.dark  {
+  background: pink;
+}
+
+.container {
+  @include outer-container;
+  padding: 1em;
+
+  h1 {
+    margin-bottom: .9em;
+  }
+
+  h4 {
+    background: #BBB;
+    color: white;
+    display: inline-block;
+    font-size: .75em;
+    font-weight: 800;
+    margin-bottom: 1.3em;
+    padding: 3px 8px;
+    text-transform: uppercase;
+  }
+}
+
+#next {
+  margin-top: 0.5em;
+  color: $medium-gray;
+  opacity: 0.8;
+}
+
+#up {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999999990;
+  opacity: 0.5;
+}

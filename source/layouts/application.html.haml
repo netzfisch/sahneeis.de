@@ -4,10 +4,12 @@
     %meta{charset: "utf-8"}
     %meta{content: "IE=edge,chrome=1", http: {equiv: "X-UA-Compatible"}}
     %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
-    %title= current_page.data.title || "The Middleman"
+    %title= current_page.data.title || "Stefanie Behrens || Sprache & Redaktion"
     = stylesheet_link_tag "application"
 
   %body{class: page_classes}
+    = partial "partials/navigation.html"
     = yield
-    = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js"
-    = javascript_include_tag "application"
+    = partial "partials/footer.html"
+    = partial "partials/scroll-to-top"
+    = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js", "application"
