@@ -46,18 +46,17 @@ title: Stefanie Behrens || Sprache & Redaktion
     %h4 Leistungen
     %h1 WAS MACHE ICH?
     .flex-boxes
-      %a.flex-box{:href => "javascript:void(0)"}
-        %img{:alt => "", :src => "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2_dark.png"}/
-        %h1.flex-title Text-Arbeit
-        %p Sie geben das Thema und Zeilenzahl vor, ich schreibe in Abstimmung mit Ihnen den Text.
-      %a.flex-box{:href => "javascript:void(0)"}
-        %img{:alt => "", :src => "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1_dark.png"}/
-        %h1.flex-title Sprach-Aufnahmen
-        %p Sie schicken den Text, ich redigiere diesen in Abstimmung mit Ihnen und sende Ihnen die fertige Aufnahme.
-      %a.flex-box{:href => "javascript:void(0)"}
-        %img{:alt => "", :src => "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png"}/
+      = partial "partials/modal-textwork"
+      %a.flex-box{:href => "#references"}
+        %i.fa.fa-volume-up.fa-3x
+        %h1.flex-title Sprachaufnahmen
+        %p Meine <b>Stimme</b> hat eine besondere <b>Anmutung</b>: Seit vielen Jahren bin ich die <b>Sprecherin für Imagefilme, Beiträge, Werbung</b>, aber auch für Ansage- und <b>Sprachcomputersysteme von Mobilfunkanbietern</b>.
+        %p Auf Wunsch kann ich gerne Ihre <b>Texte redigieren</b> oder diese auch <b>konzeptionell</b> mit Ihnen vorab <b>bearbeiten</b> und dann <b>zeitnah im eigenen Tonstudio einsprechen</b>.
+      %a.flex-box{:href => "#references"}
+        %i.fa.fa-user.fa-3x
         %h1.flex-title Interviews
-        %p Sie organisieren den Termin, ich bereite das Interview vor, führe es durch und schicke Ihnen den fertigen Text.
+        %p
+          Egal ob <b>Medien-Helden oder Stars</b> des Alltags: In <b>interessanten Interviews</b> kommt der <b>Mensch hinter seiner beruflichen oder gesellschaftlichen Position zum Vorschein</b>. Mit viel Einfühlungsvermögen beim Interview gelingen mir <b>interessante Porträts</b> - gerne werde ich auch für Ihre Publikation Interviews führen, schauen Sie sich meine <b>Referenzen</b> an.
     %a.scroll-on-page-link{:href => "#references"}
       %i.fa.fa-chevron-down.fa-3x#next
 
@@ -138,5 +137,31 @@ title: Stefanie Behrens || Sprache & Redaktion
               %td
                 %audio{:controls => ""}
                   %source{:src => "assets/audio/MultiKulti2.mp3", :type => "audio/mpeg"}
+      %li.tab-header-and-content
+        %a.tab-link{:href => "javascript:void(0)"}
+          %i.fa.fa-file-text
+          Interviews
+        .tab-content
+          %table
+            %tr
+              %td Model
+              %td
+                %a{:href => "http://www.gala.de/beauty-fashion/fashion/stefanie-giesinger-interview-durchbruch-auf-der-fashion-week-new-york_1384631_225770.html", :target => "_blank"} Stefanie Giesinger
+              %td
+            %tr
+              %td Designerinnen
+              %td
+                %a{:href => "http://www.gala.de/beauty-fashion/fashion/kaviar-gauche-unsere-bridal-stories_1323025_225769.html", :target => "_blank"} Alexandra Fischer-Roehler & Johanna Kühl
+              %td Label KAVIAR GAUCHE
+            %tr
+              %td Designerin
+              %td
+                %a{:href => "http://www.gala.de/stars/news/interview/lala-berlin-es-gibt-keine-no-gos-mehr_1283232_225720.html", :target => "_blank"} Leyla Piedayesh
+              %td Label lala BERLIN
+            %tr
+              %td Make-up-Artist
+              %td
+                %a{:href => "http://www.gala.de/beauty-fashion/beauty/loni-baur-von-make-up-bis-mode_1202133_225720.html"} Loni Baur
+              %td
     %a.scroll-on-page-link{:href => "#contact"}
       %i.fa.fa-chevron-down.fa-3x#next

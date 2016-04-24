@@ -38,10 +38,15 @@
   li {
     line-height: 1.5em;
     list-style: none;
-    text-align: center;
+    text-align: left;
   }
 
-  li a {
+  li a,
+  li .modal-trigger {
+    padding: 0;
+    display: inline;
+    font-weight: initial;
+
     color: $footer-link-color;
     text-decoration: none;
 
