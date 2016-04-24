@@ -11,6 +11,10 @@ GEM
     autoprefixer-rails (6.3.6)
       execjs
     backports (3.6.8)
+    bitters (1.2.0)
+      bourbon (>= 4.2)
+      sass (>= 3.4)
+      thor
     bourbon (4.2.7)
       sass (~> 3.4)
       thor (~> 0.19)
@@ -150,6 +154,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bitters (= 1.2)
   bourbon (~> 4.2)
   font-awesome-middleman
   middleman (~> 4.0)

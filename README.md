@@ -1,10 +1,10 @@
 # Sahneeis.de
 
-**Single-Page-Website** based on Bourbon, Neat, Bitters, Refills and created by Middleman. Originally forked from the [Proteus gem](https://github.com/thoughtbot/proteus) which provide some shortcuts.
+**Single-Page-Website** created with Middleman and based on Bourbon, Neat,
+Bitters and Refills, originally forked from this
+[Starter Kit](https://github.com/thoughtbot/proteus-middleman).
 
-# Template
-
-Feel free to clone this repositority as starting point for your own single-page-website
+Feel free to clone this repository as starting point for your own single-page-website
 
 ## Getting Started
 
@@ -23,24 +23,26 @@ bundle install
 
 Run the server for local preview
 ```
-middleman server
+bundle exec middleman server
 ```
 
 Deploy to FTP, Github Pages, etc.
 ```
-middleman build
-middleman deploy
-
+bundle exec middleman build
+bundle exec middleman deploy
 ```
 
 ## Update
 
-To update the gems do
+To update **fetch and merge upstream**
 ```
-bundle update
+git fetch upstream master
+git checkout master
+git merge upstream/master
 ```
 
-If you need to update refills CSS skeleton do
+or **update versions in the Gemfile** and do `bundle update`. The refills CSS
+skeleton needs to be updated manually
 ```
 cd source/assets/stylesheets/
 gem install bitters
@@ -49,7 +51,7 @@ bitters install
 git diff
 ```
 
-Inspect the diff and than commit.
+Inspect the diff for breaking changes and than commit!
 
 ## Includes
 --------
@@ -93,4 +95,5 @@ not reuse anything therein without my permission:
 * source/assets/audio/
 * source/assets/images/
 
-Everything else is free software, and may be redistributed under the terms specified in the LICENSE file.
+Everything else is free software, and may be redistributed under the terms
+specified in the LICENSE file.
