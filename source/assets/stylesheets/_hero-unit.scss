@@ -53,11 +53,11 @@
         }
       }
 
-      a {
+      i {
         color: $hero-color;
         @include keyframes(pulsate) {
           0%   {
-               @include transform(scale(0.1, 0.1));
+               @include transform(scale(0.4, 0.4));
                @include transition(opacity(0.0));
           }
           50%  {
