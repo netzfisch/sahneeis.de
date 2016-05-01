@@ -87,6 +87,15 @@ If you have problems, please create a
 Have a fix or want to add a feature?
 [Pull Requests](https://github.com/netzfisch/sahneeis.de/pulls) are welcome!
 
+# Todo's
+
+* fix modal-imprint style
+* fix deploy configuration
+* change to better instagram provider
+* fix large player in mobile view
+* allow static top-navbar > reduce section.padding by e.g. 80px
+* add audio samples
+
 # License
 
 The following directories and their contents are Copyright of netzfisch. You may
