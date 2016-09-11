@@ -91,7 +91,6 @@ Have a fix or want to add a feature?
 
 * fix modal-imprint style
 * fix deploy configuration
-* change to better instagram provider
 * fix large player in mobile view
 * allow static top-navbar > reduce section.padding by e.g. 80px
 * add audio samples
