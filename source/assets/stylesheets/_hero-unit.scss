@@ -1,7 +1,7 @@
 .hero {
   $hero-color: white;
   $hero-background-color: black;
-  $hero-image: "../images/typewriter-0.3.png";
+  $hero-image: "../images/typewriter.png";
 
   @include background-image(url($hero-image));
   //, radial-gradient(circle 50% 50%, $hero-background-color, $hero-color, transparent 20%));
