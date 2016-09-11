@@ -91,7 +91,7 @@ Have a fix or want to add a feature?
 
 * fix modal-imprint style
 * fix deploy configuration
-* fix large player in mobile view
+* fix large-player, mobile-logo in mobile view
 * allow static top-navbar > reduce section.padding by e.g. 80px
 * add audio samples
 
