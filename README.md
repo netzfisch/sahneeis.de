@@ -41,12 +41,12 @@ git checkout master
 git merge upstream/master
 ```
 
-or **update versions in the Gemfile** and do `bundle update`. The refills CSS
-skeleton needs to be updated manually
+or **update versions in the Gemfile** and do `bundle update`. The Bitters
+scaffold for styles, variables and structure needs to be updated manually
 ```
 cd source/assets/stylesheets/
-gem install bitters
 bitters remove
+gem update bitters
 bitters install
 git diff
 ```

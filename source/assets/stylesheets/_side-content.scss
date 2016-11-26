@@ -25,5 +25,5 @@
   .content p {
     color: gray;
   }
-  @include reset-display();
+  @include reset-display(); // deprecated?
 }
